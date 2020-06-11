@@ -22,11 +22,11 @@ public class AdminController {
 		Persona p = new Persona();
 		p.setApellidos("apellidos");
 		p.setEdad(1);
-		if( name != null && name.trim() != "" ) {
+		//if( name != null && name.trim() != "" ) {
 			p.setNombres(name);
-		}else {			
-			p.setNombres("nombres");
-		}
+			//}else {			
+			//p.setNombres("nombres");
+			//}
 			
 
 		return p;
