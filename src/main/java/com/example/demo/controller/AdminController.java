@@ -22,12 +22,14 @@ public class AdminController {
 		Persona p = new Persona();
 		p.setApellidos("apellidos");
 		p.setEdad(1);
-		//if( name != null && name.trim() != "" ) {
+		if( name != null && !"".equalsIgnoreCase(name.trim()) ) {
 			p.setNombres(name);
-			//}else {			
-			//p.setNombres("nombres");
-			//}
-			
+		}else {			
+			p.setNombres("nombres");
+		}
+		System.out.println("Refactor 1");
+		System.out.println("Refactor 2");
+		System.out.println("Refactor 3");
 
 		return p;
 	}
